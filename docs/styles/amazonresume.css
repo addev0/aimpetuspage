@@ -1,0 +1,128 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F2F8FC; /* Very light, subtle blue for body background */
+}
+.resume-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem; /* Rounded corners for the main container */
+    overflow: hidden;
+}
+.header-section {
+    background-color: #001F3F; /* Darker blue for better contrast - UPDATED */
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+.quote-section {
+    background-color: #E6F2F8; /* Light blue accent */
+    color: #004080; /* Deep blue text for contrast */
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.main-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+.left-sidebar {
+    width: 100%;
+    padding: 2rem;
+    background-color: #E6F2F8; /* Light blue background for sidebar */
+    border-right: 1px solid #B0D0E0; /* Muted light blue border */
+}
+.right-content {
+    width: 100%;
+    padding: 2rem;
+}
+
+@media (min-width: 768px) { /* Medium screens and up */
+    .left-sidebar {
+        width: 30%;
+    }
+    .right-content {
+        width: 70%;
+    }
+}
+
+.section-title {
+    font-weight: 600;
+    color: #004080; /* Deep blue */
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #336699; /* Medium blue underline */
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.contact-info div {
+    margin-bottom: 0.5rem;
+    display: flex; /* Ensure flexbox for alignment */
+    align-items: center; /* Vertically align items */
+    line-height: 1.2; /* Adjust line height for better icon-text alignment */
+}
+.contact-info svg {
+    margin-right: 0.5rem;
+    color: #004080; /* Deep blue icon */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+.language-list li, .interests-list li {
+    margin-bottom: 0.5rem;
+    /* display: flex; /* Removed as it caused issues with bullet points */
+    /* align-items: center; */
+}
+.work-experience-item {
+    margin-bottom: 1.5rem;
+}
+.work-experience-item:last-child {
+    margin-bottom: 0;
+}
+.work-title {
+    font-weight: 600;
+    color: #004080; /* Deep blue */
+    margin-bottom: 0.25rem;
+}
+.work-company {
+    font-weight: 500;
+    color: #4b5563; /* Dark gray for good contrast */
+    font-size: 0.95rem;
+}
+.work-dates {
+    font-size: 0.85rem;
+    color: #6b7280; /* Medium gray for readability */
+    margin-bottom: 0.75rem;
+}
+.work-description ul {
+    list-style-type: disc;
+    margin-left: 1.25rem;
+    color: #374151; /* Dark gray for body text */
+}
+.work-description li {
+    margin-bottom: 0.5rem;
+}
+.core-skill-item {
+    margin-bottom: 0.75rem;
+}
+.core-skill-item strong {
+    color: #004080; /* Deep blue for emphasis */
+}
+.tech-proficiencies ul {
+    list-style-type: disc;
+    margin-left: 1.25rem;
+    columns: 1; /* Default to 1 column */
+    color: #374151; /* Dark gray for body text */
+}
+@media (min-width: 640px) { /* Small screens and up */
+    .tech-proficiencies ul {
+        columns: 2; /* Two columns for technical proficiencies */
+    }
+}
+.tech-proficiencies li {
+    margin-bottom: 0.5rem;
+}

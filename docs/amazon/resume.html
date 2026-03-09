@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian Sabellona</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F2F8FC; /* Very light, subtle blue for body background */
+        }
+        .resume-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0.75rem; /* Rounded corners for the main container */
+            overflow: hidden;
+        }
+        .header-section {
+            background-color: #001F3F; /* Darker blue for better contrast - UPDATED */
+            color: #ffffff;
+            padding: 2rem;
+            text-align: center;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+        }
+        .quote-section {
+            background-color: #E6F2F8; /* Light blue accent */
+            color: #004080; /* Deep blue text for contrast */
+            padding: 1.5rem 2rem;
+            text-align: center;
+            font-style: italic;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+        .left-sidebar {
+            width: 100%;
+            padding: 2rem;
+            background-color: #E6F2F8; /* Light blue background for sidebar */
+            border-right: 1px solid #B0D0E0; /* Muted light blue border */
+        }
+        .right-content {
+            width: 100%;
+            padding: 2rem;
+        }
+
+        @media (min-width: 768px) { /* Medium screens and up */
+            .left-sidebar {
+                width: 30%;
+            }
+            .right-content {
+                width: 70%;
+            }
+        }
+
+        .section-title {
+            font-weight: 600;
+            color: #004080; /* Deep blue */
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #336699; /* Medium blue underline */
+            text-transform: uppercase;
+            font-size: 1.1rem;
+        }
+        .contact-info div {
+            margin-bottom: 0.5rem;
+            display: flex; /* Ensure flexbox for alignment */
+            align-items: center; /* Vertically align items */
+            line-height: 1.2; /* Adjust line height for better icon-text alignment */
+        }
+        .contact-info svg {
+                margin-right: 0.5rem;
+                color: #004080; /* Deep blue icon */
+                flex-shrink: 0; /* Prevent icon from shrinking */
+            }
+        .language-list li, .interests-list li {
+            margin-bottom: 0.5rem;
+            /* display: flex; /* Removed as it caused issues with bullet points */
+            /* align-items: center; */
+        }
+        .work-experience-item {
+            margin-bottom: 1.5rem;
+        }
+        .work-experience-item:last-child {
+            margin-bottom: 0;
+        }
+        .work-title {
+            font-weight: 600;
+            color: #004080; /* Deep blue */
+            margin-bottom: 0.25rem;
+        }
+        .work-company {
+            font-weight: 500;
+            color: #4b5563; /* Dark gray for good contrast */
+            font-size: 0.95rem;
+        }
+        .work-dates {
+            font-size: 0.85rem;
+            color: #6b7280; /* Medium gray for readability */
+            margin-bottom: 0.75rem;
+        }
+        .work-description ul {
+            list-style-type: disc;
+            margin-left: 1.25rem;
+            color: #374151; /* Dark gray for body text */
+        }
+        .work-description li {
+            margin-bottom: 0.5rem;
+        }
+        .core-skill-item {
+            margin-bottom: 0.75rem;
+        }
+        .core-skill-item strong {
+            color: #004080; /* Deep blue for emphasis */
+        }
+        .tech-proficiencies ul {
+            list-style-type: disc;
+            margin-left: 1.25rem;
+            columns: 1; /* Default to 1 column */
+            color: #374151; /* Dark gray for body text */
+        }
+        @media (min-width: 640px) { /* Small screens and up */
+            .tech-proficiencies ul {
+                columns: 2; /* Two columns for technical proficiencies */
+            }
+        }
+        .tech-proficiencies li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="header-section">
+            <h1 class="text-3xl font-bold mb-1">ADRIAN SABELLONA</h1>
+            <p class="text-xl font-medium">AMAZON EXPERT | E-COMMERCE STRATEGIES & GROWTH</p>
+        </div>
+
+        <div class="quote-section">
+            "With 10 years of e-commerce experience, starting my Amazon career in 2015, I thrive on transforming strategies into business success. I'm driven by the exciting complexity and ever-changing landscape of the Amazon/e-commerce field, constantly finding new puzzles to solve. Leveraging data-driven insights, I enhance brand visibility and drive sales growth, creating exceptional customer experiences."
+        </div>
+
+        <div class="main-content">
+            <div class="left-sidebar">
+                <div class="mb-8">
+                    <h2 class="section-title">CONTACT</h2>
+                    <div class="contact-info text-sm text-gray-700">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 00.948.684l1.498 4.493a1 1 0 00.54.918l.766.416a1 1 0 00.948 0l.766-.416a1 1 0 00.54-.918l1.498-4.493A1 1 0 0018.72 3H21a2 2 0 012 2v14a2 2 0 01-2 2H3a2 2 0 01-2-2V5z" />
+                            </svg>
+                            <span>+639199403908</span>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                            </svg>
+                            <a href="mailto:adrian@aimpetus.com" class="hover:underline">adrian@aimpetus.com</a>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Iligan City, Philippines</span>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                            <a href="#" class="hover:underline">Linkedin Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="section-title">LANGUAGE</h2>
+                    <ul class="language-list text-sm text-gray-700 list-disc ml-4">
+                        <li>English</li>
+                        <li>Filipino</li>
+                        <li>Cebuano</li>
+                    </ul>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="section-title">INTERESTS</h2>
+                    <ul class="interests-list text-sm text-gray-700 list-disc ml-4">
+                        <li><strong class="font-medium">Self-Development:</strong> Passionate about personal growth and continuous learning.</li>
+                        <li><strong class="font-medium">Self-Awareness:</strong> Committed to understanding and improving oneself.</li>
+                        <li><strong class="font-medium">Logical Thinking:</strong> Enjoy solving problems and making decisions based on logic.</li>
+                        <li><strong class="font-medium">Neuroscience:</strong> Fascinated by the workings of the brain and its impact on behavior.</li>
+                        <li><strong class="font-medium">Consumer Behavior & Psychology:</strong> Interested in understanding what drives consumer decisions.</li>
+                        <li><strong class="font-medium">Mathematics:</strong> Enjoy exploring mathematical concepts and their real-world applications.</li>
+                        <li><strong class="font-medium">Physics:</strong> Enthusiastic about the principles governing the physical world.</li>
+                        <li><strong class="font-medium">Case Studies:</strong> Love analyzing real-life business scenarios and their outcomes.</li>
+                        <li><strong class="font-medium">Philosophy:</strong> Enjoy exploring fundamental questions about existence, knowledge, and ethics.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-content">
+                <div class="mb-8">
+                    <h2 class="section-title">MOST RECENT WORK-EXPERIENCES</h2>
+                    <div class="work-experience-item">
+                        <h3 class="work-title">Amazon Growth Strategist / Consultant</h3>
+                        <p class="work-company">Marketing Agency</p>
+                        <p class="work-dates">December 2024 - July 2025</p>
+                        <ul class="work-description">
+                            <li>Headed and led projects focused on successfully launching brands on Amazon that previously sold only online or in physical stores.</li>
+                            <li>Provided comprehensive strategic consultation, outlining all necessary steps, actions, and strategies for Amazon market entry and growth.</li>
+                            <li>Developed and executed plans to optimize Amazon presence, drive sales, and enhance brand visibility.</li>
+                        </ul>
+                    </div>
+                    <div class="work-experience-item">
+                        <h3 class="work-title">Project Manager / Developer</h3>
+                        <p class="work-company">AI-Powered Chatbot and Automations WebApp</p>
+                        <p class="work-dates">May - June 2025</p>
+                        <ul class="work-description">
+                            <li>Led the development and project management of an AI-powered chatbot and automations web application.</li>
+                            <li>Implemented automation solutions to streamline processes and enhance user interaction.</li>
+                        </ul>
+                    </div>
+                    <div class="work-experience-item">
+                        <h3 class="work-title">Product/Brand Content Optimization Product Research & Development</h3>
+                        <p class="work-company">BB Ventures <span class="text-gray-500">- Multi-Brand Retailer</span></p>
+                        <p class="work-dates">2023 - 2024</p>
+                        <ul class="work-description">
+                            <li>Optimized product content for various brands, boosting visibility and increasing conversion rates by 8% in one year through advanced SEO, Conversion Rate Optimization, and A/B Testing methods.</li>
+                            <li>Achieved a significant **$440k Profit Year-over-Year Revenue Change** through strategic initiatives.</li>
+                            <li>Led team in developing new product idea validation process that increased new products and brands success-rate by 30%, leveraging detailed market analysis and product performance insights.</li>
+                        </ul>
+                    </div>
+                    <div class="work-experience-item">
+                        <h3 class="work-title">Operations Manager</h3>
+                        <p class="work-company">Passive Profits <span class="text-gray-500">- Multi-Brand Retailer</span></p>
+                        <p class="work-dates">2021 - 2023</p>
+                        <ul class="work-description">
+                            <li>Optimized product content for various brands, boosting visibility and increasing conversion rates by 8% in one year through advanced SEO, Conversion Rate Optimization, and A/B Testing methods.</li>
+                            <li>Led team in developing new product idea validation process that increased new products and brands success-rate by 30%, leveraging detailed market analysis and product performance insights.</li>
+                        </ul>
+                    </div>
+                    <div class="work-experience-item">
+                        <h3 class="work-title">Business Development Manager</h3>
+                        <p class="work-company">Juice My Ride <span class="text-gray-500">- Car Battery Charger Mfr.</span></p>
+                        <p class="work-dates">2020 - 2021</p>
+                        <ul class="work-description">
+                            <li>Developed and implemented business strategies that improved market penetration by 15% within the first year of transitioning into the Amazon market, focusing on strategic planning and advertising optimization.</li>
+                            <li>Utilized research and data analytics to optimize systems, resulting in enhanced operational performance and seamless integration into the Amazon marketplace, contributing to overall revenue growth.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="section-title">CORE-SKILLS</h2>
+                    <ul class="list-disc ml-4 text-gray-700">
+                        <li class="core-skill-item"><strong>Data Analysis & Business Intelligence:</strong> Proficient in advanced data analysis, including forecasting, demand planning, diagnostic and prescriptive analysis. Specialized in leveraging **Python, Machine Learning, and AI Models** to transform raw data into meaningful insights and drive informed decisions and process enhancements.</li>
+                        <li class="core-skill-item"><strong>E-commerce Strategy & Business Development:</strong> Devising and implementing strategies for e-commerce businesses, including market research, competitor analysis, customer-centric solutions, and identifying growth opportunities to drive market expansion, revenue growth, and brand success on Amazon.</li>
+                        <li class="core-skill-item"><strong>Product & Brand Management:</strong> Managing products and brands on diverse platforms with a focus on Amazon, adept at steering brand strategies, maintaining account health, and ensuring compliance with platform standards to drive growth and optimize visibility.</li>
+                        <li class="core-skill-item"><strong>Amazon PPC Advertising:</strong> Comprehensive knowledge in crafting and managing targeted advertising campaigns on Amazon, including analysis, keyword goldmining, bid optimization, and A/B testing for ROI improvement and boosting organic sales through sponsored ads.</li>
+                        <li class="core-skill-item"><strong>Content Creation & Optimization (SEO & Media):</strong> Generating creative content ideas and leading projects to optimize product and brand listings, including Enhanced Product Images, Infographics, Brand Story, Product A+ Content (Basic and Premium) & Storefronts, and optimizing Product Titles, Descriptions, Bullets, Backend Search Terms, and other Contents for Organic Ranking SEO, enhancing visibility and conversion rates.</li>
+                        <li class="core-skill-item"><strong>Product Research & Development:</strong> Leading initiatives from product ideation to market launch, conducting detailed market analysis, competitor assessment, and translating insights into innovative products, utilizing tools like ZonGuru, Helium10, Jungle-Scout Pro, and Viral Launch for high-potential product scouting.</li>
+                        <li class="core-skill-item"><strong>Operational Efficiency & System Development:</strong> Developing and optimizing systems and processes across departments, implementing efficient workflows and systems to streamline operations, enhance organizational productivity, and improve customer satisfaction.</li>
+                        <li class="core-skill-item"><strong>Project Management:</strong> Implementing tailored project management methodologies to streamline workflows, foster collaboration, and elevate team performance. (Certified by Google).</li>
+                        <li class="core-skill-item"><strong>Supply Chain, Seller Central & Digital Marketing:</strong> Proficient in overseeing inventory levels, coordinating shipments, refining supply chain processes, sourcing and negotiating with suppliers, mastering Amazon Seller Central for robust sales reporting and account oversight, and enhancing digital marketing efforts.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="section-title">Technical Proficiencies</h2>
+                    <ul class="tech-proficiencies text-sm text-gray-700">
+                        <li>Project Management: Click-Up (Power user, AI-Expert)</li>
+                        <li>E-commerce Platforms: Amazon Seller Central</li>
+                        <li>Office Suites: Google Workspace, Microsoft 365</li>
+                        <li>Amazon Tools: ZonGuru, Helium10, Scalelnsights, Sellerboard, Data-Dive, JungleScout, Keepa, Viral-Launch, Shulex AI, AZ-Insight</li>
+                        <li>Scripting and Automation: Google Appscript, Python Programming, Python Data-Analysis</li>
+                        <li>Analytics and Research: Google Analytics, SEMrush</li>
+                        <li>Design Tools: Basic Photoshop, Canva</li>
+                        <li>Mind Mapping: Mind-Maps, Whiteboards</li>
+                        <li>AI Tools: ChatGPT, CoPilot, Gemini</li>
+                        <li>Communication Tools: Slack, Microsoft Teams, Skype, Zoom</li>
+                        <li>Certifications: Amazon Ads Retail Certification (Certified by Amazon), Azure Cloud Computing (Certified by Microsoft)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
