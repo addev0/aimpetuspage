@@ -1,27 +1,88 @@
+/* Palette and usage: design/amazon-colors.md */
+/* Reference fonts: exact faces and weight mapping used by sell.amazon.com. */
+@font-face {
+    font-family: 'Amazon Ember Modern Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://d3216uwaav9lg7.cloudfront.net/staticAsset-Sell-EmberModernDisplay-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Amazon Ember Modern Display';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('https://d3216uwaav9lg7.cloudfront.net/staticAsset-Sell-EmberModernDisplay-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Amazon Ember Modern Display';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('https://d3216uwaav9lg7.cloudfront.net/staticAsset-Sell-EmberModernDisplay-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Amazon Ember Modern Text';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://d3216uwaav9lg7.cloudfront.net/staticAsset-Sell-EmberModernText-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Amazon Ember Modern Text';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('https://d3216uwaav9lg7.cloudfront.net/staticAsset-Sell-EmberModernText-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Amazon Ember Modern Text';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('https://d3216uwaav9lg7.cloudfront.net/staticAsset-Sell-EmberModernText-Bold.woff2') format('woff2');
+}
+:root {
+    --font-display: 'Amazon Ember Modern Display', Helvetica, Arial, sans-serif;
+    --font-text: 'Amazon Ember Modern Text', Helvetica, Arial, sans-serif;
+    --color-navy: #232F3E;
+    --color-sidebar: #EEF2F6;
+    --color-highlight: #F55600;
+    --color-surface: #FFFFFF;
+    --color-surface-muted: #F5F3EF;
+    --color-heading: #161D26;
+    --color-text: #232F3E;
+    --color-muted: #52606D;
+    --color-border: #D5D9D9;
+    --color-link: #161D26;
+    --color-accent: #FF6200;
+    --color-accent-hover: #F55600;
+    --color-focus: #232F3E;
+}
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #708090; /* Very light, subtle blue for body background */
+    margin: 0;
+    color: var(--color-text);
+    font-family: var(--font-text);
+    font-size: 16px;
+    line-height: 24px;
+    background-color: var(--color-surface);
 }
 .resume-container {
-    max-width: 1000px;
-    margin: 2rem auto;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0.75rem; /* Rounded corners for the main container */
-    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-surface);
 }
 .header-section {
-    background-color: #001F3F; /* Darker blue for better contrast - UPDATED */
-    color: #ffffff;
+    background-color: var(--color-surface);
+    color: var(--color-heading);
     padding: 2rem;
     text-align: center;
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
 }
 .quote-section {
-    background-color: #E6F2F8; /* Light blue accent */
-    color: #004080; /* Deep blue text for contrast */
+    background-color: var(--color-surface-muted);
+    color: var(--color-heading);
     padding: 1.5rem 2rem;
     text-align: center;
     font-style: italic;
@@ -35,8 +96,8 @@ body {
 .left-sidebar {
     width: 100%;
     padding: 2rem;
-    background-color: #E6F2F8; /* Light blue background for sidebar */
-    border-right: 1px solid #B0D0E0; /* Muted light blue border */
+    background-color: var(--color-sidebar);
+    border-right: 1px solid var(--color-border);
 }
 .right-content {
     width: 100%;
@@ -53,13 +114,19 @@ body {
 }
 
 .section-title {
-    font-weight: 600;
-    color: #004080; /* Deep blue */
+    font-weight: 700;
+
+    color: var(--color-navy);
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #336699; /* Medium blue underline */
-    text-transform: uppercase;
-    font-size: 1.1rem;
+
+    border-bottom: 2px solid var(--color-navy);
+
+    text-transform: none;
+
+    font-size: 24px;
+    font-family: var(--font-display);
+    line-height: 28px;
 }
 .contact-info div {
     margin-bottom: 0.5rem;
@@ -69,7 +136,7 @@ body {
 }
 .contact-info svg {
     margin-right: 0.5rem;
-    color: #004080; /* Deep blue icon */
+    color: var(--color-heading);
     flex-shrink: 0; /* Prevent icon from shrinking */
 }
 .language-list li, .interests-list li {
@@ -84,24 +151,31 @@ body {
     margin-bottom: 0;
 }
 .work-title {
-    font-weight: 600;
-    color: #004080; /* Deep blue */
+    font-weight: 700;
+
+    color: var(--color-navy);
     margin-bottom: 0.25rem;
+    font-family: var(--font-display);
+    font-size: 20px;
+    line-height: 24px;
 }
 .work-company {
-    font-weight: 500;
-    color: #4b5563; /* Dark gray for good contrast */
-    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--color-muted);
+
+    font-size: 16px;
+    line-height: 24px;
 }
 .work-dates {
-    font-size: 0.85rem;
-    color: #6b7280; /* Medium gray for readability */
+    font-size: 14px;
+    color: var(--color-muted);
     margin-bottom: 0.75rem;
+    line-height: 21px;
 }
 .work-description ul {
     list-style-type: disc;
     margin-left: 1.25rem;
-    color: #374151; /* Dark gray for body text */
+    color: var(--color-text);
 }
 .work-description li {
     margin-bottom: 0.5rem;
@@ -110,13 +184,14 @@ body {
     margin-bottom: 0.75rem;
 }
 .core-skill-item strong {
-    color: #004080; /* Deep blue for emphasis */
+    color: var(--color-navy);
+    font-weight: 700;
 }
 .tech-proficiencies ul {
     list-style-type: disc;
     margin-left: 1.25rem;
     columns: 1; /* Default to 1 column */
-    color: #374151; /* Dark gray for body text */
+    color: var(--color-text);
 }
 @media (min-width: 640px) { /* Small screens and up */
     .tech-proficiencies ul {
@@ -125,4 +200,184 @@ body {
 }
 .tech-proficiencies li {
     margin-bottom: 0.5rem;
+}
+
+/* Client-facing introduction on the Amazon services page. */
+.amazon-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+    padding: clamp(2rem, 6vw, 4rem) clamp(1.5rem, 5vw, 3.5rem);
+    text-align: left;
+}
+.amazon-hero h1 {
+    margin: 0;
+    line-height: 1.4;
+}
+.amazon-hero-name {
+    display: block;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--color-navy);
+    margin-bottom: 0.75rem;
+
+    color: var(--color-navy);
+
+    font-size: 32px;
+
+    font-weight: 700;
+    font-family: var(--font-display);
+    line-height: 1.25;
+}
+.amazon-hero-title {
+    display: block;
+    text-wrap: balance;
+
+    font-size: 40px;
+
+    font-weight: 900;
+    color: var(--color-heading);
+    font-family: var(--font-display);
+    line-height: 1.12;
+}
+.amazon-hero-intro {
+    max-width: 680px;
+    margin: 1.5rem 0 0;
+    color: var(--color-text);
+
+    font-size: 20px;
+
+    line-height: 30px;
+    font-family: var(--font-text);
+}
+.amazon-hero-experience {
+    margin: 1.25rem 0 0;
+    color: var(--color-muted);
+    font-size: 0.9375rem;
+}
+.amazon-hero-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    min-height: 48px;
+    margin-top: 1.75rem;
+
+    padding: 18px 34px;
+
+    border-radius: 36px;
+    background: var(--color-accent);
+    color: var(--color-heading);
+
+    font-weight: 700;
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 24px;
+    line-height: 24px;
+    border: 2px solid var(--color-accent);
+    box-shadow: none;
+    transition: background-color 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+}
+.amazon-hero-cta:hover {
+    background: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+    box-shadow: 0 4px 8px -2px rgba(22, 30, 39, 0.1);
+}
+.amazon-hero-cta:focus-visible {
+    outline: 5px solid var(--color-focus);
+    outline-offset: 5px;
+}
+
+/* Keep existing utility classes on the documented palette. */
+.main-content .text-gray-700 { color: var(--color-text); }
+.main-content .text-gray-500 { color: var(--color-muted); }
+.contact-info a { color: var(--color-link); }
+.contact-info a:hover { text-decoration: underline; }
+.main-content a:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+}
+
+/* Contact navigation in the navy accent bar. */
+.site-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    min-height: 72px;
+    padding: 12px clamp(1.5rem, 5vw, 3.5rem);
+    background: var(--color-navy);
+}
+.topbar-hook {
+    margin: 0;
+    font-family: var(--font-text);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-surface);
+}
+.topbar-contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    min-height: 44px;
+    padding: 8px 20px;
+    border: 2px solid var(--color-accent);
+    border-radius: 28px;
+    background: var(--color-accent);
+    color: var(--color-heading);
+    font-family: var(--font-display);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 150ms ease, border-color 150ms ease;
+}
+.topbar-contact:hover {
+    background: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+}
+.topbar-contact:focus-visible {
+    outline: 3px solid var(--color-surface);
+    outline-offset: 4px;
+}
+@media (max-width: 767px) {
+    .site-topbar { justify-content: center; text-align: center; }
+    .topbar-hook { font-size: 14px; line-height: 21px; }
+    .topbar-contact { font-size: 16px; }
+}
+/* Orange emphasis is reserved for large, bold heading text. */
+.text-highlight-heading { color: var(--color-highlight); }
+.text-emphasis {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+.main-content .text-sm {
+    font-size: 14px;
+    line-height: 21px;
+}
+.contact-info div { line-height: 21px; }
+.main-content a { font-weight: 700; }
+@media (max-width: 767px) {
+    .amazon-hero-name { font-size: 24px; line-height: 30px; }
+    .amazon-hero-title { font-size: 32px; line-height: 36px; }
+    .amazon-hero-intro { font-size: 18px; line-height: 27px; }
+    .amazon-hero-cta { font-size: 20px; line-height: 24px; padding: 14px 28px; }
+    .section-title { font-size: 22px; line-height: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .amazon-hero-cta, .topbar-contact { transition: none; }
+}
+
+/* Identity and introduction share the hero at desktop widths. */
+.amazon-hero-identity, .amazon-hero-content { min-width: 0; }
+.amazon-hero-content .amazon-hero-intro:first-child { margin-top: 0; }
+@media (min-width: 1024px) {
+    .amazon-hero {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+        column-gap: clamp(3rem, 6vw, 7rem);
+    }
+    .amazon-hero-name { font-size: clamp(32px, 2.8vw, 40px); }
+    .amazon-hero-title { font-size: clamp(40px, 3.6vw, 52px); }
 }
