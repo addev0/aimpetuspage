@@ -249,19 +249,32 @@ body {
     margin: 0;
     line-height: 1.4;
 }
+.amazon-hero-identity {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.amazon-hero-heading {
+    transform: translateY(-10px);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.25rem, 2vw, 1.5rem);
+}
 .amazon-hero-name {
     display: block;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid var(--color-navy);
-    margin-bottom: 0.75rem;
-
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.45);
     color: var(--color-navy);
-
-    font-size: 32px;
-
+    font-size: clamp(30px, 3.2vw, 44px);
     font-weight: 700;
     font-family: var(--font-display);
     line-height: 1.25;
+}
+.amazon-hero-name-text {
+    display: block;
+    transform: translateY(-5px);
 }
 .amazon-hero-title {
     display: block;
@@ -275,7 +288,7 @@ body {
     line-height: 1.12;
 }
 .amazon-hero-intro {
-    max-width: 680px;
+    max-width: 620px;
     margin: 1.5rem 0 0;
     color: var(--color-text);
 
@@ -297,7 +310,7 @@ body {
     min-height: 48px;
     max-width: 100%;
     text-align: center;
-    margin-top: 1.75rem;
+    margin-top: 0;
 
     padding: 18px 34px;
 
@@ -408,8 +421,6 @@ body {
 .contact-info div { line-height: 24px; }
 .main-content a { font-weight: 700; }
 @media (max-width: 767px) {
-    .amazon-hero-name { font-size: 24px; line-height: 30px; }
-    .amazon-hero-title { font-size: 32px; line-height: 36px; }
     .amazon-hero-intro { font-size: 18px; line-height: 27px; }
     .amazon-hero-cta { font-size: 20px; line-height: 24px; padding: 14px 28px; }
     .section-title { font-size: 22px; line-height: 28px; }
@@ -420,14 +431,32 @@ body {
 
 /* Identity and introduction share the hero at desktop widths. */
 .amazon-hero-identity, .amazon-hero-content { min-width: 0; }
+/* A quiet inset surface improves contrast without changing paragraph geometry. */
+.amazon-hero-content {
+    margin-left: 10px;
+    position: relative;
+    isolation: isolate;
+    max-width: 620px;
+}
+.amazon-hero-content::before {
+    content: "";
+    position: absolute;
+    inset: -20px -24px;
+    z-index: -1;
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--color-heading) 28%, transparent);
+    pointer-events: none;
+}
+@media (max-width: 767px) {
+    .amazon-hero-content::before { inset: -16px; }
+}
 .amazon-hero-content .amazon-hero-intro:first-child { margin-top: 0; }
 @media (min-width: 1024px) {
     .amazon-hero {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+        min-height: min(800px, 90svh);
         column-gap: clamp(3rem, 6vw, 7rem);
     }
-    .amazon-hero-name { font-size: clamp(32px, 2.8vw, 40px); }
-    .amazon-hero-title { font-size: clamp(40px, 3.6vw, 52px); }
 }
 
 /* Extend the photo behind the top bar, reserving room for its wrapped content. */
@@ -435,7 +464,7 @@ body {
     padding-top: calc(var(--topbar-height, 105px) + clamp(2rem, 6vw, 4rem));
     background-color: var(--color-navy);
     background-image:
-        linear-gradient(90deg, rgba(22, 29, 38, 0.82), rgba(22, 29, 38, 0.86)),
+        linear-gradient(90deg, rgba(22, 29, 38, 0.779), rgba(22, 29, 38, 0.817)),
         url('/images/amazon-seller-central-reference-hero.png');
     background-size: cover;
     background-position: center 20%;
@@ -447,9 +476,6 @@ body {
 .amazon-hero .text-emphasis {
     color: var(--color-surface);
 }
-.amazon-hero-name {
-    border-bottom-color: rgba(255, 255, 255, 0.45);
-}
 .amazon-hero .text-highlight-heading {
     color: var(--color-accent);
 }
@@ -459,8 +485,63 @@ body {
 @media (max-width: 1023px) {
     .amazon-hero {
         background-image:
-            linear-gradient(rgba(22, 29, 38, 0.82), rgba(22, 29, 38, 0.88)),
+            linear-gradient(rgba(22, 29, 38, 0.779), rgba(22, 29, 38, 0.836)),
             url('/images/amazon-seller-central-reference-hero.png');
         background-position: 65% center;
     }
+}
+
+/* Keep the greeting, wordmark, and credential on one shared left edge. */
+.certification-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    max-width: 100%;
+    text-align: left;
+    gap: calc(clamp(0.75rem, 1vw, 0.875rem) - 2px);
+    color: var(--color-surface);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(28px, 2.7vw, 38px);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+}
+.certification-title > span {
+    font-size: inherit;
+}
+.certification-title > .certification-label {
+    font-size: 1.155em;
+    transform: translateY(2px);
+    color: #12AEC4;
+}
+.amazon-reference-logo {
+    display: block;
+    width: clamp(205.2px, 24.3vw, 306px);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Scale the complete wordmark together; match expert to the logo letter height. */
+.certification-wordmark-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.1%;
+    width: clamp(389.88px, 46.17vw, 581.4px);
+    max-width: 100%;
+    min-width: 0;
+    container-type: inline-size;
+}
+.certification-wordmark-row .amazon-reference-logo {
+    flex: 0 0 52.631579%;
+    width: 52.631579%;
+    min-width: 0;
+}
+.certification-expert {
+    flex: 0 0 auto;
+    font-size: 14.5cqi;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    margin-top: -0.24em;
 }

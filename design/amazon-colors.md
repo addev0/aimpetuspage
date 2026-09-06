@@ -67,3 +67,12 @@ Sources: [reference page](https://sell.amazon.com/?ref_=sdus_soa_home_n), [refer
 The hero now uses a decorative workspace image over navy with a dark overlay. In this area, name/title/intro/body emphasis are white, the orange word Amazon is #FF6200, and the name divider is white at 45% opacity. The orange contact button keeps its dark label and has a white focus outline. This supersedes the earlier white-hero pairings; all supporting-section colors stay the same.
 
 The weakest overlay is 82% of RGB 22,29,38. Even over a white source-image pixel, calculated contrast is 9.58:1 for white text and 3.19:1 for the large bold orange heading. See [Hero image notes](amazon-hero-image.md) for the locally stored asset and final generation prompt.
+
+
+Certified label exception: the user-supplied pill reference introduces --color-certified (#4B850B), used only for the Certified badge and inset ribbon details. Badge text and the certification ribbon use white.
+
+
+Hero background lightening, latest September 7, 2026: reduce dark overlay opacity by 5% relative to the previous values. Desktop changes from 82–86% to 77.9–81.7%; tablet/mobile from 82–88% to 77.9–83.6%. Preserve the overlay color, photograph, crop, typography, and layout. Conservative contrast over a pure-white image pixel at the weakest overlay is 8.27:1 for white text and 3.10:1 for the large teal Certified label. Stylesheet version: 63aaff7221. Local preview only; not committed or published.
+
+
+Subtle introduction background, latest September 7, 2026: add a translucent existing heading-color surface at 28% opacity behind both introductory paragraphs, beginning Since 2015. A decorative pseudo-element extends 20px vertically / 24px horizontally beyond the text container (16px on mobile), with 12px rounded corners, no border, shadow, or blur. Keep text fully opaque and preserve paragraph positioning, wrapping, wording, and spacing. Limit the container to the existing 620px paragraph width. The photograph remains visible through the surface. Stylesheet version: a2670e74a7. Local preview only; not committed or published.
