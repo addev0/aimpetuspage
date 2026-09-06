@@ -60,3 +60,10 @@ Calculated using WCAG sRGB relative luminance. The orange heading highlight is 2
 Observed on the reference: heading `#161D26`, supporting text `#232F3E`, orange button `#FF6200`, orange highlight and button hover `#F55600`, warm gray `#F5F3EF`, and white reading surfaces. The navy sidebar tint, muted text, and border gray are companion colors selected for this portfolio. No change in conversion has been measured.
 
 Sources: [reference page](https://sell.amazon.com/?ref_=sdus_soa_home_n), [reference stylesheet](https://d3216uwaav9lg7.cloudfront.net/assets-Sell.css), [WCAG contrast minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
+
+
+## Photographic hero exception, September 7, 2026
+
+The hero now uses a decorative workspace image over navy with a dark overlay. In this area, name/title/intro/body emphasis are white, the orange word Amazon is #FF6200, and the name divider is white at 45% opacity. The orange contact button keeps its dark label and has a white focus outline. This supersedes the earlier white-hero pairings; all supporting-section colors stay the same.
+
+The weakest overlay is 82% of RGB 22,29,38. Even over a white source-image pixel, calculated contrast is 9.58:1 for white text and 3.19:1 for the large bold orange heading. See [Hero image notes](amazon-hero-image.md) for the locally stored asset and final generation prompt.

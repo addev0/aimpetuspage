@@ -93,23 +93,37 @@ body {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-.left-sidebar {
+.left-sidebar, .right-content {
+    min-width: 0;
     width: 100%;
-    padding: 2rem;
+    padding: clamp(1.5rem, 3vw, 3rem);
+}
+.left-sidebar {
     background-color: var(--color-sidebar);
-    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
 }
 .right-content {
-    width: 100%;
-    padding: 2rem;
+    font-size: 16px;
+    line-height: 26px;
+}
+/* Limit long reading lines without adding an outer page frame. */
+.right-content > div {
+    max-width: 78ch;
+}
+.right-content > div:not(:last-child) {
+    margin-bottom: 3rem;
 }
 
-@media (min-width: 768px) { /* Medium screens and up */
+@media (min-width: 1024px) {
     .left-sidebar {
         width: 30%;
+        border-right: 1px solid var(--color-border);
+        border-bottom: 0;
     }
     .right-content {
         width: 70%;
+        font-size: 17px;
+        line-height: 28px;
     }
 }
 
@@ -131,8 +145,8 @@ body {
 .contact-info div {
     margin-bottom: 0.5rem;
     display: flex; /* Ensure flexbox for alignment */
-    align-items: center; /* Vertically align items */
-    line-height: 1.2; /* Adjust line height for better icon-text alignment */
+    align-items: center;
+    line-height: 24px;
 }
 .contact-info svg {
     margin-right: 0.5rem;
@@ -140,15 +154,15 @@ body {
     flex-shrink: 0; /* Prevent icon from shrinking */
 }
 .language-list li, .interests-list li {
-    margin-bottom: 0.5rem;
-    /* display: flex; /* Removed as it caused issues with bullet points */
-    /* align-items: center; */
+    margin-bottom: 0.75rem;
 }
-.work-experience-item {
-    margin-bottom: 1.5rem;
+.interests-list strong {
+    font-weight: 700;
 }
-.work-experience-item:last-child {
-    margin-bottom: 0;
+.work-experience-item + .work-experience-item {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
 }
 .work-title {
     font-weight: 700;
@@ -157,7 +171,10 @@ body {
     margin-bottom: 0.25rem;
     font-family: var(--font-display);
     font-size: 20px;
-    line-height: 24px;
+    line-height: 27px;
+}
+@media (min-width: 1024px) {
+    .work-title { font-size: 22px; line-height: 28px; }
 }
 .work-company {
     font-weight: 400;
@@ -169,37 +186,54 @@ body {
 .work-dates {
     font-size: 14px;
     color: var(--color-muted);
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     line-height: 21px;
 }
-.work-description ul {
+.work-description {
     list-style-type: disc;
-    margin-left: 1.25rem;
+    margin: 0;
+    padding-inline-start: 1.25rem;
     color: var(--color-text);
 }
-.work-description li {
-    margin-bottom: 0.5rem;
+.work-description li + li {
+    margin-top: 1rem;
 }
-.core-skill-item {
-    margin-bottom: 0.75rem;
-}
-.core-skill-item strong {
+.work-description li::marker {
     color: var(--color-navy);
+}
+.core-skills {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.core-skill-item + .core-skill-item {
+    margin-top: 1.5rem;
+}
+.core-skill-item > strong:first-child, .tech-label {
+    display: block;
+    margin-bottom: 0.375rem;
+    color: var(--color-navy);
+    font-family: var(--font-display);
+    font-size: 18px;
     font-weight: 700;
+    line-height: 26px;
 }
-.tech-proficiencies ul {
-    list-style-type: disc;
-    margin-left: 1.25rem;
-    columns: 1; /* Default to 1 column */
+.tech-proficiencies {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     color: var(--color-text);
-}
-@media (min-width: 640px) { /* Small screens and up */
-    .tech-proficiencies ul {
-        columns: 2; /* Two columns for technical proficiencies */
-    }
 }
 .tech-proficiencies li {
-    margin-bottom: 0.5rem;
+    min-width: 0;
+}
+@media (min-width: 1280px) {
+    .tech-proficiencies {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 /* Client-facing introduction on the Amazon services page. */
@@ -261,6 +295,8 @@ body {
     justify-content: center;
     gap: 0.75rem;
     min-height: 48px;
+    max-width: 100%;
+    text-align: center;
     margin-top: 1.75rem;
 
     padding: 18px 34px;
@@ -291,15 +327,23 @@ body {
 /* Keep existing utility classes on the documented palette. */
 .main-content .text-gray-700 { color: var(--color-text); }
 .main-content .text-gray-500 { color: var(--color-muted); }
-.contact-info a { color: var(--color-link); }
+.contact-info a {
+    min-width: 0;
+    color: var(--color-link);
+    overflow-wrap: anywhere;
+    padding-block: 4px;
+}
 .contact-info a:hover { text-decoration: underline; }
 .main-content a:focus-visible {
     outline: 3px solid var(--color-focus);
     outline-offset: 3px;
 }
 
-/* Contact navigation in the navy accent bar. */
+/* Contact navigation overlays the hero and gains navy after it leaves view. */
 .site-topbar {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 20;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -307,6 +351,10 @@ body {
     gap: 0.75rem 1.5rem;
     min-height: 72px;
     padding: 12px clamp(1.5rem, 5vw, 3.5rem);
+    background: transparent;
+    transition: background-color 150ms ease;
+}
+.site-topbar.is-past-hero {
     background: var(--color-navy);
 }
 .topbar-hook {
@@ -354,10 +402,10 @@ body {
     font-weight: 700;
 }
 .main-content .text-sm {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 26px;
 }
-.contact-info div { line-height: 21px; }
+.contact-info div { line-height: 24px; }
 .main-content a { font-weight: 700; }
 @media (max-width: 767px) {
     .amazon-hero-name { font-size: 24px; line-height: 30px; }
@@ -367,7 +415,7 @@ body {
     .section-title { font-size: 22px; line-height: 28px; }
 }
 @media (prefers-reduced-motion: reduce) {
-    .amazon-hero-cta, .topbar-contact { transition: none; }
+    .amazon-hero-cta, .topbar-contact, .site-topbar { transition: none; }
 }
 
 /* Identity and introduction share the hero at desktop widths. */
@@ -380,4 +428,39 @@ body {
     }
     .amazon-hero-name { font-size: clamp(32px, 2.8vw, 40px); }
     .amazon-hero-title { font-size: clamp(40px, 3.6vw, 52px); }
+}
+
+/* Extend the photo behind the top bar, reserving room for its wrapped content. */
+.amazon-hero {
+    padding-top: calc(var(--topbar-height, 105px) + clamp(2rem, 6vw, 4rem));
+    background-color: var(--color-navy);
+    background-image:
+        linear-gradient(90deg, rgba(22, 29, 38, 0.82), rgba(22, 29, 38, 0.86)),
+        url('/images/amazon-seller-central-reference-hero.png');
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+.amazon-hero-name,
+.amazon-hero-title,
+.amazon-hero-intro,
+.amazon-hero .text-emphasis {
+    color: var(--color-surface);
+}
+.amazon-hero-name {
+    border-bottom-color: rgba(255, 255, 255, 0.45);
+}
+.amazon-hero .text-highlight-heading {
+    color: var(--color-accent);
+}
+.amazon-hero-cta:focus-visible {
+    outline-color: var(--color-surface);
+}
+@media (max-width: 1023px) {
+    .amazon-hero {
+        background-image:
+            linear-gradient(rgba(22, 29, 38, 0.82), rgba(22, 29, 38, 0.88)),
+            url('/images/amazon-seller-central-reference-hero.png');
+        background-position: 65% center;
+    }
 }
