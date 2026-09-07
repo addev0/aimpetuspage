@@ -359,3 +359,264 @@ Subtle introduction background, latest September 7, 2026: add a translucent exis
 
 
 Introduction position, latest September 7, 2026: move both introduction paragraphs and their translucent background 10px right using margin-left: 10px on .amazon-hero-content. Available width adapts on narrow screens to keep the background inside the viewport. Preserve wording, colors, and identity/action positions. Stylesheet version: 936a59c308. Local preview only; not committed or published.
+
+
+## Selected results, September 7, 2026
+
+The user chose to proceed one step at a time: add only the compact Selected results section immediately below the hero. The case study is deferred and its draft removed from the page. Preserve the hero and existing supporting content.
+
+Show Hitrons Inc. | Tools & Home Improvement with the May–August 2026 engagement period. Feature $410K gross Amazon revenue in May 2026 with the May 1 start, first-month context, and highest monthly total outside Prime Day months in the brand’s 10-year history. Feature 16% ACoS in June 2026 with the account-low monthly result and sole Amazon Ads manager context. Do not present revenue as incremental growth or profit, or invent an ACoS reduction.
+
+Use existing navy text, pale navy surface, neutral dividers, and Ember fonts. Results sit side by side from 768px and stack below, with 32px vertical padding and existing fluid hero-aligned horizontal padding. Stylesheet version: a788353188. Local preview only; not committed or published.
+
+
+Results clarity refinement, September 7, 2026: replace Selected results with Amazon performance highlights. Put descriptive headings above the figures: Gross Amazon revenue with a wallet outline icon, and Advertising efficiency with a target outline icon. Show ACoS beside 16% and expand its meaning below. Preserve dates, first-month context, historical comparisons, and sole Ads ownership. Icons are decorative inline SVGs using navy; no new assets or interaction. Case study remains deferred. Stylesheet version: 8c3331ad77. Local only.
+
+
+Results heading, September 7, 2026: use the user-requested title “Latest Performance Highlights”. This supersedes “Amazon performance highlights”; metric titles, icons, figures, context, and styling remain unchanged. Local only.
+
+
+Performance highlights context line, September 7, 2026: remove the company/category/engagement-period line beneath Latest Performance Highlights at the user’s request. Preserve metric dates and explanations, and the company name in the existing work-experience entry. Styling unchanged. Local only.
+
+
+Compact achievement graphics, September 7, 2026: add an 80–104px inline SVG beside each figure. Revenue uses a single decorative column and top marker, representing the single May observation without an invented series, comparative scale, or target. ACoS uses an exact 16-of-100 circular stroke with an accessible description identifying ad spend / ad-attributed sales; its remaining track does not imply profit. Navy and existing neutral tokens, no animation, axes, added dataset, or chart dependency. Both titles and original claim context remain. Contract: portfolio KPI illustrations, one reported observation per metric; purpose is rapid visual recognition, not a trend analysis. Verify at 1440, 768, and 390px. Stylesheet version: b056ec62c5. Local only.
+
+
+Amazon-style graph illustrations, September 7, 2026: user rejected the single column and ACoS ring in favor of a summarized Amazon graph representation. Replace both with compact orange curves and subtle area fills: rising for revenue achievement, falling for advertising-cost efficiency. These are symbolic illustrations, not measured series; show a small Illustrative caption and omit time axes, ticks, historical values, and invented comparison claims. Decorative graphics are hidden from assistive technology; actual figures and full context remain in adjacent text. Reuse palette tokens and preserve the section layout. Stylesheet version: 9a217d255d. Local only.
+
+
+Revenue achievement headline, September 7, 2026: use “Highest Monthly Gross Revenue in 10 Years” as requested, with “Outside Prime Day months” immediately beneath the heading to retain the historical comparison boundary. Preserve the $410K value, May 2026 date, first-month context, and descriptive paragraph. No stylesheet changes. Local only.
+
+
+Featured revenue achievement, September 7, 2026: user requested a stronger visual highlight and removal of the separate Outside Prime Day months line. Remove only that subtitle; retain the qualification in the explanatory paragraph. Feature revenue in a navy card with an orange top border, trophy icon, 25–32px bold heading, orange in 10 Years emphasis, and orange 56–76px $410K. Give the companion ACoS item a white card with matching padding and radius. Preserve existing copy, illustrative curves, hero, and other sections. Metrics wrap when necessary on narrow screens. Stylesheet version: 666752fdbc. Local only.
+
+
+Revenue headline refinement, September 7, 2026: use exactly Highest Monthly Revenue in 10-years. Emphasize in 10-years on its own orange line, place the trophy in a subtle circular orange badge, and add breathing room and a quiet divider beneath the large $410K and illustrative graph. Preserve supporting dates and context. Stylesheet version: 1251f39371. Local only.
+
+
+Open highlights presentation, September 7, 2026: user rejected the dark background and card treatment and requested one change at a time. Remove item backgrounds, outlines, rounding, and shadows. Use navy text and legible neutral chart details on the existing pale section surface. Preserve current headline, sizing, spacing, trophy badge, figures, and graph illustrations. Do not bundle further refinements. Stylesheet version: e5b2782ff0. Local only.
+
+
+Revenue headline, September 7, 2026: change only the headline to “Highest Monthly Revenue”, removing in 10-years. Preserve all other wording, figures, graphics, and styling. Local only.
+
+
+Revenue unit, September 7, 2026: add /month after the existing $410K figure using the existing result-unit style. Preserve the reported amount and all other content and styling. Local only.
+
+
+Full revenue figure, September 7, 2026: display $410,000/month instead of $410K/month in the highlighted figure. Preserve other content and styling. Local only.
+
+
+Monthly unit color, September 7, 2026: change only /month to the normal text color token, preserving the orange revenue figure and all sizing. Stylesheet version: 86d324d929. Local only.
+
+
+Revenue unit abbreviation, September 7, 2026: shorten /month to /mo. only. Preserve the normal navy unit color and all other content and styling. Local only.
+
+
+Revenue summary bars, September 7, 2026: replace only the revenue curve with ten equal muted-grey symbolic bars grouped as a 10-year span and one taller orange final bar labeled May 2026. Retain the Illustrative caption: the grey bars are historical context, not measured yearly revenue, and heights are not a comparative data scale. Preserve the Prime Day qualification in the supporting paragraph, ACoS curve, figures, and all other styling. Local only.
+
+
+Revenue chart readability, September 7, 2026: after reviewing the tiny equal-bar graphic, replace only the revenue illustration with a wider chart below the figure, subtle gridlines, varied muted-grey symbolic bars, and a tallest orange May 2026 bar labeled $410K. Explicitly label the grey backdrop 10-year history (illustrative); heights are decorative, not source data, and no measured historical scale is supplied. Keep all surrounding content and ACoS unchanged. Stylesheet version: f555ce06b2. Local only.
+
+
+Continuous revenue bars, September 7, 2026: user requested continuous history with the final orange bar about 70% taller than most preceding bars. Use equal 12-unit bars on 16-unit spacing, including the final May bar. Illustrative grey bars cluster around height 61; final bar height 104 is about 70% taller. This is requested illustration geometry, not a reported revenue increase or measured historical series. Keep the explicit illustrative label and all other content unchanged. Local only.
+
+
+May bar spacing, September 7, 2026: move only the orange May bar 2 SVG units left, reducing its gap from the preceding grey bar from 4 to 2 units. Recenter its labels. Preserve height, width, colors, and all other content. Local only.
+
+
+Revenue chart width, September 7, 2026: narrow only the revenue SVG to 85% of its container, capped at 320px and centered. Preserve its aspect ratio and all bar geometry, colors, labels, and surrounding content. Stylesheet version: 895975c753. Local only.
+
+
+Revenue chart label, September 7, 2026: user asked what illustrative means and requested its removal. Explained that the grey bars are symbolic rather than actual historical revenue figures. Remove only the parenthetical from the revenue chart label, leaving 10-year history. The geometry remains decorative and must not be reused as measured historical data. All other content unchanged. Local only.
+
+
+Revenue chart alignment, September 7, 2026: remove the small $410K label above the orange bar and left-align the chart beneath the main figure, bringing the last bar toward the end of the large $410,000 amount. Preserve chart dimensions and other labels. Stylesheet version: 4042c424c1. Local only.
+
+
+Revenue figure alignment, September 7, 2026: move only the large $410,000/mo. figure 8px right using translateX, preserving its layout box and the chart position. Stylesheet version: 1d48e28fd5. Local only.
+
+
+Revenue suffix removal, September 7, 2026: remove only /mo. after the highlighted $410,000 figure. Preserve all styling, positioning, chart, and supporting copy. Local only.
+
+
+Amount centered over May, September 7, 2026: center the large $410,000 directly above the orange May bar using its SVG center at 336/380 of chart width. Reserve the amount’s height and reduce chart width as needed on narrow screens to contain the figure. This supersedes the earlier 8px translation. Preserve all content and chart geometry. Stylesheet version: 8d71cad388. Local only.
+
+
+Revenue figure right adjustment, September 7, 2026: shift only the amount 8px right from its centered-over-May position. Preserve the chart. Stylesheet version: 9b22aad07a. Local only.
+
+
+Revenue chart vertical adjustment, September 7, 2026: translate only the revenue chart upward 8px to bring it nearer the figure. Preserve chart width, figure position, and other content. Stylesheet version: 1cfe1dc7dd. Local only.
+
+
+Revenue chart proximity, September 7, 2026: move only the chart another 20px up, changing translateY from -8px to -28px. Preserve figure position and other content. Stylesheet version: fa6445eaff. Local only.
+
+
+Shorter revenue chart, September 7, 2026: reduce only the chart width by 15%, preserving its aspect ratio. Offset its left position to keep the May bar center at the same horizontal coordinate beneath the figure. Preserve the -28px vertical translation. Stylesheet version: 41b18531f4. Local only.
+
+
+Thinner historical bars, September 7, 2026: reduce grey bar width from 12 to 10 SVG units and increase their count from 20 to 24 within the same historical span. Preserve the orange May bar, chart size, alignment, and other content. Grey heights remain symbolic illustration geometry. Local only.
+
+
+Thinner historical bars, latest September 7, 2026: reduce grey bar width from 10 to 6 SVG units, increasing the count from 24 to 32 within the same span. Preserve the orange May bar, chart dimensions, and positioning. Local only.
+
+
+Irregular grey bars, September 7, 2026: vary the 32 symbolic grey heights with a fixed irregular pattern. Set their maximum to 69.333333 SVG units so the unchanged 104-unit May bar is 50% taller than the highest grey spike. This ratio is requested illustration geometry, not a reported historical revenue comparison. Preserve widths, positions, colors, and all other content. Local only.
+
+
+Gentle historical growth illustration, September 7, 2026: add a shallow rising baseline beneath the varied grey bars, retaining irregular fluctuations. Normalize their highest spike to 104/1.5 so May remains 50% taller. This is symbolic illustration geometry, not measured historical growth. Preserve all other chart and page elements. Local only.
+
+
+Historical illustration with $300K average, September 7, 2026: user requested an average grey value of $300K and up/down trends. Explained that this conflicts with the earlier May-50%-above-highest rule; prioritize the newer $300K average. Set 32 symbolic bars to an exact $300K mean on the same proportional scale as May $410K, with several rising/falling stretches and modest overall growth. May remains highest. These are constructed illustration values, not supplied historical observations. Preserve width, positioning, labels, and all other page elements. Local only.
+
+
+Irregular randomized revenue illustration, September 7, 2026: replace repeating waves with a fixed seeded random sample of 32 symbolic historical values, adjusted to an exact $300,000 mean. Constrain every value below $410,000 and retain a modest difference between early and late group averages. These generated values are illustration-only, not historical account records. Keep May unchanged. Seed: 20260507. Constructed values in USD: 236909, 207533, 266143, 272513, 304868, 273652, 259131, 368609, 321222, 343470, 331349, 236742, 315888, 339412, 335673, 315660, 301952, 327759, 331164, 371440, 295373, 298392, 251044, 350748, 223472, 269819, 218648, 313586, 314432, 355774, 283370, 364253. Local only.
+
+
+Historical average refinement, September 7, 2026: retain the approved randomized pattern and scale all grey bar heights by 5/6, lowering their illustrative average from $300,000 to $250,000. May remains $410,000 and all bar widths, positions, and other content remain unchanged. Values remain constructed illustration geometry. Local only.
+
+
+Revenue visual group size, September 7, 2026: enlarge the figure and chart together by 10% with scale(1.1), anchored top-left on the revenue measure group. Preserve the headline, summary text, chart pattern, and $250K illustrative grey average. Stylesheet version: cbaaf67d04. Local only.
+
+
+Matching ACoS achievement styling, September 7, 2026: style the right highlight with the same open presentation, orange circular target badge, bold Lowest Monthly ACoS headline, large orange 16% and navy ACoS unit, and matching visual-group size/alignment. Use a compact grey declining line with fluctuations and an orange final June 2026 low, aligned beneath the figure. Preserve an explicit illustrative label because the historical line is symbolic; no baseline or reduction is claimed. Keep the original date and sole Ads manager context. Reserve clearance below both scaled groups to prevent their dividers touching summary text. Stylesheet version: 7901cfa0c0. Local only.
+
+
+Highlights section spacing, September 7, 2026: increase bottom padding from 2rem to 4rem, adding 32px before the following supporting-content section. Preserve all other spacing. Stylesheet version: 6ce30b8ce5. Local only.
+
+
+TACoS highlight update, September 7, 2026: user requested TACoS in place of ACoS and supplied 7% after the denominator distinction was explained. Update only the early highlight to Lowest Monthly TACoS, 7% TACoS, and Total advertising cost of sales, retaining June 2026 and sole Ads manager context. Update its symbolic trend label accordingly. This is user-supplied portfolio wording; the historic work-experience ACoS claim remains unchanged. No CSS or layout changes. Local only.
+
+
+TACoS figure suffix removal, September 7, 2026: remove only TACoS immediately after the highlighted 7%. Preserve the Lowest Monthly TACoS title, expanded metric label, chart, and all other content and styling. Local only.
+
+
+TACoS starting point, September 7, 2026: user supplied a reduction from 13% TACoS to 7%. Add 13% at the start of the summary chart, retain the large 7% endpoint, and state the reduction in the supporting description. Baseline date was not supplied; do not invent one. Intermediate line points remain illustrative. No other changes. Local only.
+
+
+Randomized TACoS historical illustration, September 7, 2026: user requested the grey periods average 13% with randomness. Generate 20 fixed random illustrative values centered on 13%, and map all points and the final orange 7% onto the same linear vertical scale. Label the grey period 13% average; retain the illustrative trend label. Intermediate values are constructed, not observed monthly data. Preserve other elements. Seed 1307. Local only.
+
+
+Highlight divider length, September 7, 2026: interpret the user’s horizontal-line request as the long dividers beneath both charts. Shorten each at the right edge by 10 rendered pixels, accounting for the 1.1 group scale. Preserve chart gridlines and layout geometry. Stylesheet version: 113c25b2be. Local only.
+
+
+Top bar scrolling fix, September 7, 2026: keep the contact bar transparent only at scroll position zero; use solid navy immediately when scrolling starts so hero text cannot show through behind contact text. Preserve the fixed position, existing layout, and contact actions. Stylesheet version: 478d8f7b44. Local only.
+
+
+Intro scroll fade, September 7, 2026: supersedes the earlier solid-bar scrolling fix. Restore the transparent contact bar throughout the hero. Fade the complete intro and its inset background over the final 120px (or available clearance) before reaching the top bar, leaving 24px clearance; restore it when scrolling back up. Reduced motion switches visibility without fading. Preserve all intro copy and layout. Local only.
+
+
+Smoother intro fade, September 7, 2026: replace the final-120px fade with a gradual fade across the entire available scrolling distance from page top to the intro reaching the contact bar. Smooth opacity updates with a 240ms ease-out transition, disabled for reduced motion. Restore opacity progressively on upward scrolling. Supersedes the previous fade timing; preserve layout and copy. Local only.
+
+
+Intro animation refinement, September 7, 2026: use a smoothstep scroll fade with a subtle 14px upward drift and up to 2px blur, strongest only near disappearance. Smooth changes over 300ms and reverse when scrolling up. Reserve 40px before the top bar and measure untransformed layout coordinates to prevent feedback. Reduced motion disables drift, blur, and transitions. Preserve copy and layout. Local only.
+
+
+Scroll darkening refinement, September 7, 2026: gradually darken the hero photograph by adding up to 0.14 to its overlay alpha as the intro exits. Dim the intro progressively to 45% brightness as it fades, preserving the original appearance at page top. Slow smoothing to 550ms for a softer dissolve. Reverse on upward scrolling; disable darkening motion and transitions for reduced motion. Local only.
+
+
+Darken before dissolving, September 7, 2026: make the requested effect visible by retaining opacity through the first 45% of scroll progress while brightness decreases. Then dissolve smoothly over the remaining 55%. Intro brightness ends at 20%; photo overlay gains up to 0.18 alpha. Preserve 550ms smoothing, top-of-page appearance, reduced-motion handling, and all copy/layout. Local only.
+
+
+Hero overlay correction, September 7, 2026: remove all intro opacity, transform, brightness, and blur effects. Use one dark overlay above the hero photograph and intro, increasing its opacity with scrolling and reversing on return. Keep identity/contact action above this overlay. Text itself remains fully opaque and stationary. Overlay smooths over 400ms; reduced motion switches without transition. This supersedes all previous intro fade/filter approaches. Local only.
+
+
+Gradual overlay scroll range, September 7, 2026: replace the short intro-to-navigation gap with the full hero height (minimum 700px) as the darkening range. Overlay opacity increases linearly from 0 to 0.95, smoothing over 650ms. Reduced motion retains proportional darkening without a timed transition, eliminating the previous binary dark switch. No text fade, blur, or movement. Local only.
+
+
+Darkening rate adjustment, September 7, 2026: increase the overlay darkening rate by 10% by dividing its scroll range by 1.1. Preserve the 650ms smoothing, opacity cap, and all other behavior. Local only.
+
+
+Darkening rate adjustment, September 7, 2026: increase the current rate by another 5%, changing the multiplier from 1.1 to 1.155 (1.1 x 1.05). Preserve smoothing and all other behavior. Local only.
+
+
+Top bar translucent shade, September 7, 2026: add a navy gradient behind the fixed contact bar with a soft 24px transparent lower edge. Start its layer at 45% opacity and increase gradually to full layer opacity over 180px of scrolling; the gradient itself remains slightly translucent behind the text. Smooth over 350ms, disabled for reduced motion. Preserve the current hero darkening rate, copy, and contact actions. Local only.
+
+
+Translucent top bar blur, September 7, 2026: replace the shaded background with a frosted backdrop, increasing blur from 2px to 20px over the first 180px of scrolling. A translucent navy tint increases from 18% to 66% to keep white contact text readable over light sections. Preserve the soft 24px lower edge. Remove the solid background switch after the hero; foreground text and button stay sharp. Preserve hero darkening. Local only.
+
+
+Top bar edge refinement, September 7, 2026: remove the 24px feathered extension and gradient mask that mixed blurred and sharp content below the bar. Confine the frosted backdrop to the bar bounds and add a subtle 1px translucent bottom divider. Preserve progressive blur, tint, and all layout/contact behavior. Local only.
+
+
+Inset top bar, September 7, 2026: give the fixed top bar an island shape with 8px top/side margins and 12px corner radii, including its frosted backdrop. Reserve the top inset in hero clearance. Preserve blur, tint, contact actions, and scroll behavior; do not clip keyboard focus outlines. Local only.
+
+
+Seamless top-of-page navigation, September 7, 2026: hide the entire frosted top bar surface, including its border, at scroll position zero. Increase surface opacity from 0 to 1 over the existing 180px scroll range, retaining the inset rounded shape and progressive blur when scrolling down. Foreground contact text/actions remain visible. Local only.
+
+
+Clear frosted top bar, September 7, 2026: remove the increasing navy tint and use only an 8% white glass tint with the existing progressive backdrop blur. Preserve rounded inset shape and invisible surface at page top. Switch hook text and keyboard focus ring to dark colors over the light supporting sections so clear glass remains readable. Local only.
+
+
+Black acrylic top bar, September 7, 2026: replace the 8% white glass tint with 24% neutral black for translucent black acrylic. Preserve progressive backdrop blur, transparent surface at page top, rounded inset shape, and adaptive hook colors. Local only.
+
+
+Darker black acrylic, September 7, 2026: increase the top bar black tint from 24% to 52% opacity to reduce its pale appearance. Keep the hook and focus ring white over supporting sections for contrast against the deeper tint. Preserve blur and scroll behavior. Local only.
+
+
+Top bar top gap removal, September 7, 2026: remove only the 8px top inset; keep 8px side margins, rounded corners, dark acrylic tint, and current scroll behavior. Local only.
+
+
+Top bar top margin, September 7, 2026: set the top inset to 2px, retaining 8px side margins and all other styling and behavior. Local only.
+
+
+Navy blur beyond hero, September 7, 2026: when the top bar bottom crosses the hero boundary, transition its frosted background from black acrylic to 88% navy (#232F3E). Keep backdrop blur and white contact text. Reverse to black acrylic on return over the hero; preserve 2px top and 8px side margins. Local only.
+
+
+Very dark navy top bar, September 7, 2026: shift only the beyond-hero background shade from #232F3E to near-black navy #0F151E, retaining 88% opacity and existing blur/transition behavior. Local only.
+
+
+Unified near-black navy top bar, September 7, 2026: use #0F151E at 88% opacity as the frosted surface tint throughout, including over the hero. Remove the distinct black-acrylic background state. Preserve gradual surface reveal from invisible at scroll zero, progressive blur, rounded shape, and margins. Local only.
+
+
+Top bar side margins, September 7, 2026: reduce left and right insets from 8px to 2px; preserve the 2px top inset and all other styling and behavior. Local only.
+
+
+Top bar opacity refinement, September 7, 2026: reduce the near-black navy background opacity by 5% relative, from 0.88 to 0.836. Preserve blur intensity, scroll reveal, margins, and all other behavior. Local only.
+
+
+More translucent navy acrylic, September 7, 2026: reduce top bar tint from 83.6% to 58% opacity and maximum backdrop blur from 20px to 12px so underlying detail remains visible over light sections. Preserve #0F151E shade, gradual scroll reveal, and geometry. Local only.
+
+
+Restore acrylic definition, September 7, 2026: restore maximum backdrop blur to 20px while retaining the more translucent 58% navy tint. Add a subtle full perimeter highlight and soft shadow to define the rounded island. Keep these on the fading surface so no outline remains at page top. Preserve 2px margins. Local only.
+
+
+Revert last acrylic refinement, September 7, 2026: user requested exactly one change undone. Restore maximum blur to 12px and the prior bottom-only border; remove the added perimeter highlight and shadow. Retain 58% navy tint and all earlier settings. Local only.
+
+
+Top bar size and opacity refinement, September 7, 2026: reduce desktop/tablet height from 72px to 68.4px and wrapped mobile height from 101px to about 95.95px through vertical spacing, preserving text/button sizing. Increase navy tint opacity by 5% relative, from 0.58 to 0.609. Preserve margins and blur. Local only.
+
+
+Stronger navy past hero, September 7, 2026: increase the near-black navy tint to 75% opacity when the top bar crosses beyond the hero, retaining 60.9% over the hero and current blur. Preserve the existing smooth background transition and reverse on return. Local only.
+
+
+Past-hero opacity correction, September 7, 2026: user clarified the increase should be 5%. Replace the proposed 75% tint with 63.945% (60.9% x 1.05) only past the hero. Preserve blur and all other settings. Local only.
+
+
+Top bar corner refinement, September 7, 2026: reduce the top bar corner radius by 20%, from 12px to 9.6px. The frosted backdrop inherits the same radius. Preserve all other styling and behavior. Local only.
+
+
+Further top bar height reduction, September 7, 2026: reduce current height by another 5%, from 68.4px to 64.98px on desktop/tablet and from 95.95px to approximately 91.15px on wrapped mobile. Adjust vertical padding only; preserve text/button sizes and all other settings. Local only.
+
+
+Dark navy opacity increase, September 7, 2026: increase both current top bar tint opacities by 5% relative: over hero 0.609 to 0.63945, and past hero 0.63945 to 0.6714225. Preserve navy shade, blur, geometry, and reveal behavior. Local only.
+
+
+Opacity scope correction, September 7, 2026: apply the latest 5% opacity increase only past the hero (0.6714225). Restore over-hero opacity to 0.609. Preserve all other settings. Local only.
+
+
+Deeper navy past hero, September 7, 2026: increase only the past-hero navy opacity to 70.5%, approximately another 5% relative. Preserve over-hero opacity, blur, and geometry. Local only.
+
+
+Blue-toned navy past hero, September 7, 2026: apply approved #071B38 at 85% opacity only beyond the hero to retain a visibly blue navy appearance over the light page. Preserve backdrop blur and the existing over-hero appearance. Local only.
+
+
+Darker blue navy past hero, September 7, 2026: deepen the beyond-hero tint to #041126 at 90% opacity. Preserve blur and the over-hero state. Local only.
+
+
+Approved navy opacity refinement, September 7, 2026: preserve #041126 past the hero and reduce opacity by 3% relative, from 90% to 87.3%. Preserve all other settings. Local only.
+
+
+Past-hero opacity setting, September 7, 2026: set the approved #041126 navy tint to exactly 85% opacity past the hero, preserving all other settings. Local only.
+
+
+Past-hero opacity setting, September 7, 2026: set the approved #041126 navy tint to exactly 80% opacity past the hero, preserving all other settings. Local only.
